@@ -1,8 +1,12 @@
 import React from 'react';
+import Button from './Button';
 
 const Footer = () => {
     return (
-        <footer>Alalaita</footer>
+        <div className="footer">
+            <Button icon='heart' />
+            <Button icon='brokenheart' />
+        </div>
     );
 }
 

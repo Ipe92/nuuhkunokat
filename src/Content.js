@@ -2,9 +2,9 @@ import React from 'react';
 
 const Content = () => {
     return (
-        <main>
+        <li classname="content">
             Sisältö
-        </main>
+        </li>
     );
 };
 

@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Header from './Header';
 import Content from './Content';
-import Header from './Header'
-import Footer from './Footer'
+import Footer from './Footer';
+import Button from './Button';
 
 const App = () => {
+  const [pets, setPets] = useState([]);
+
+  // const handleClick = () => {
+  //   if (index < pets.length) {
+  //     setIndex(index + 1)
+  //     console.log(index)
+  //     SVGElementInstanceList(pets[index])
+  //   }
+  // }
+
   return (
     <div className="App">
-      <Header />
+      <Header title='Nuuhkukuonot' />
       <Content />
-      <Footer />
+      <Footer>
+        <Button id="hrt" icon={`heart`} />
+        <Button id="bknhrt" icon={`heart-broken`} />
+      </Footer>
     </div>
   );
 }
