@@ -6,11 +6,12 @@ html, body, #root {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Palatino', 'Helvetica', sans-serif;
 }
 
 .header {
-  background-color: rgb(1, 142, 53);
+  background-color: #2e2e2e;
+  min-height: 1em;
   padding: 0.25em;
   display: flex;
   justify-content: center;
@@ -21,18 +22,21 @@ body {
 main {
   padding: 1em;
   display: flex;
-  font-size: 1.2em;
+  font-size: 1.20em;
   align-items: center;
-  background-color: wheat;
 }
 
 .footer {
-  background-color: rgb(0, 28, 88);
-  width: 50%;
-  height: 3em;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+  padding: 20px;
   color: white;
-  flex-direction: row;
+  font-size: 1.8em;
+  text-align: center;
 }

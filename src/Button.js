@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faRProject } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHeartBroken, faHeart } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faHeart, faHeartBroken)
 
 const Button = ({ icon }) => {
     return (
-        <div className={icon} />
-    );
-};
+        <FontAwesomeIcon icon={icon} />
+    )
+}
 
 export default Button;
