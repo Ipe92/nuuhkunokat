@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Content = () => {
+const Content = (props) => {
     return (
-        <li classname="content">
-            Sisältö
-        </li>
+        <main>
+            <div id="card">
+                <h3>{props.title}</h3>
+                <img src={props.pic} alt={props.title}></img>
+                <li classname="content">Sisältö</li>
+            </div>
+        </main>
     );
 };
 
